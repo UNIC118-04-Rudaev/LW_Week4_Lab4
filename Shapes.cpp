@@ -1,5 +1,5 @@
 /**
- * @file LW_Week2_Lab1.cpp
+ * @file Shapes.cpp
  * @brief This file contains functions for drawing various shapes using ASCII characters.
  * The shapes that can be drawn include horizontal lines, vertical lines, squares,
  * and rectangles. There are also functions for initializing arrays of shapes and
@@ -17,11 +17,11 @@
  * @see drawShapes(int[], int[], char[], int)
  */
 
+#include "Shapes.h"
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
 #include <cassert>
-#include "Shapes.h"
 using std::cout;
 using std::cin;
 
@@ -29,11 +29,6 @@ using std::cin;
  * @brief The maximum size of the arrays.
 */
 const int MAX_ARRAY = 10;
-
-int main()
-{
-	return 0;
-}
 
 /**
  * @brief Draws a horizontal line of a given length and character

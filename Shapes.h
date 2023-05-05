@@ -1,5 +1,5 @@
 /**
- * @file LW_Week2_Lab1.cpp
+ * @file Shapes.h
  * @brief This file contains functions for drawing various shapes using ASCII characters.
  * The shapes that can be drawn include horizontal lines, vertical lines, squares,
  * and rectangles. There are also functions for initializing arrays of shapes and
