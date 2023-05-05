@@ -22,8 +22,8 @@
 #include <cstdlib>
 #include <time.h>
 #include <cassert>
-using std::cout;
-using std::cin;
+
+using namespace std;
 
 /**
  * @brief The maximum size of the arrays.

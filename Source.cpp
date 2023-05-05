@@ -9,8 +9,8 @@
 #include <time.h>
 #include <cassert>
 #include "Shapes.h"
-using std::cout;
-using std::cin;
+
+using namespace std;
 
 int main() 
 {
