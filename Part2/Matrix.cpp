@@ -198,3 +198,63 @@ void multiplyMatrices(double matrix[][MAX_ROWS], int maxRows)
         cout << endl;
     }
 }
+
+double* sumOfRows(double matrix[][MAX_ROWS], int maxRows)
+{
+    int rows, cols;
+    double* sum = new double[MAX_ROWS];
+
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
+
+    if (rows > maxRows || cols > maxRows)
+    {
+        cout << "Invalid matrix size." << endl;
+        return sum;
+    }
+
+    cout << "Enter the matrix:" << endl;
+    for (int i = 0; i < rows; i++)
+    {
+        sum[i] = 0;
+        for (int j = 0; j < cols; j++)
+        {
+            cin >> matrix[i][j];
+            sum[i] += matrix[i][j];
+        }
+    }
+
+    return sum;
+}
+
+double* sumOfCols(double matrix[][MAX_ROWS], int maxRows)
+{
+    int rows, cols;
+    double* sum = new double[MAX_ROWS];
+
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
+
+    if (rows > maxRows || cols > maxRows)
+    {
+        cout << "Invalid matrix size." << endl;
+        return sum;
+    }
+
+    cout << "Enter the matrix:" << endl;
+    for (int i = 0; i < cols; i++)
+    {
+        sum[i] = 0;
+        for (int j = 0; j < rows; j++)
+        {
+            cin >> matrix[j][i];
+            sum[i] += matrix[j][i];
+        }
+    }
+
+    return sum;
+}

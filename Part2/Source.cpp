@@ -15,7 +15,9 @@ int main()
         cout << "3. Add two matrices" << endl;
         cout << "4. Subtract two matrices" << endl;
         cout << "5. Multiply two matrices" << endl;
-        cout << "6. Quit" << endl;
+        cout << "6. Sum of rows" << endl;
+        cout << "7. Sum of columns" << endl;
+        cout << "8. Quit" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -37,12 +39,18 @@ int main()
             multiplyMatrices(matrix, MAX_ROWS);
             break;
         case 6:
+            sumOfRows(matrix, MAX_ROWS);
+            break;
+        case 7:
+            sumOfCols(matrix, MAX_ROWS);
+            break;
+        case 8:
             cout << "Goodbye!" << endl;
             break;
         default:
             cout << "Invalid choice. Try again." << endl;
         }
-    } while (choice != 6);
+    } while (choice != 8);
 
     return 0;
 }
