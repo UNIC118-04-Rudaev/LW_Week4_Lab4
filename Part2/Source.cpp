@@ -28,10 +28,10 @@ int main()
             printMatrix(matrix, MAX_ROWS);
             break;
         case 3:
-            subtractMatrices(matrix, MAX_ROWS);
+            addMatrices(matrix, MAX_ROWS);
             break;
         case 4:
-            addMatrices(matrix, MAX_ROWS);
+            subtractMatrices(matrix, MAX_ROWS);
             break;
         case 5:
             multiplyMatrices(matrix, MAX_ROWS);
@@ -42,7 +42,7 @@ int main()
         default:
             cout << "Invalid choice. Try again." << endl;
         }
-    } while (choice != 7);
+    } while (choice != 6);
 
     return 0;
 }

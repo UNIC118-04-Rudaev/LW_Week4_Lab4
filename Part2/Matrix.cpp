@@ -89,7 +89,7 @@ void addMatrices(double matrix[][MAX_ROWS], int maxRows)
     {
         for (int j = 0; j < cols; j++)
         {
-            cin >> matrix[i][j];
+            cin >> matrix2[i][j];
         }
     }
 
