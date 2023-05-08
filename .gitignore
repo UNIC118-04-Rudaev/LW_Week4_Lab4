@@ -32,4 +32,7 @@
 *.app
 
 # VS Code files  
-.vscode/
+Part1/.vscode/
+Part1/.vs/
+Part2/.vscode/
+Part2/.vs/

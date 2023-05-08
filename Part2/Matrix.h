@@ -1,3 +1,9 @@
+/**
+ * @file Matrix.h
+ * @brief This program performs various operations on matrices.
+ * @author Alex Rudaev
+*/
+
 const int MAX_ROWS = 10;
 
 #ifndef MATRIX_H
@@ -10,4 +16,4 @@ void subtractMatrices(double[][MAX_ROWS], int);
 void multiplyMatrices(double[][MAX_ROWS], int);
 
 
-#endif
+#endif /* MATRIX_H */

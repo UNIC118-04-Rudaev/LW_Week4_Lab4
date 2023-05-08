@@ -1,3 +1,8 @@
+/**
+ * @file Matrix.cpp
+ * @brief This program performs various operations on matrices.
+ * @author Alex Rudaev
+*/
 #include "Matrix.h"
 #include <iostream>
 
@@ -84,7 +89,7 @@ void addMatrices(double matrix[][MAX_ROWS], int maxRows)
     {
         for (int j = 0; j < cols; j++)
         {
-            cin >> matrix2[i][j];
+            cin >> matrix[i][j];
         }
     }
 
