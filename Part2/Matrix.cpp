@@ -258,3 +258,32 @@ double* sumOfCols(double matrix[][MAX_ROWS], int maxRows)
 
     return sum;
 }
+
+void fillWithRandomNum(double matrix[][MAX_ROWS], int maxRows)
+{
+    int rows, cols;
+
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
+
+    if (rows > maxRows || cols > maxRows)
+    {
+        cout << "Invalid matrix size." << endl;
+        return;
+    }
+
+    srand(time(NULL));
+    cout << "The matrix is:" << endl;
+    for (int i = 0; i < rows; i++)
+    {
+        cout << endl;
+        for (int j = 0; j < cols; j++)
+        {
+            matrix[i][j] = rand() % 100;
+            cout << matrix[i][j] << " ";
+        }
+    }
+    cout << endl;
+}

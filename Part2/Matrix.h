@@ -16,5 +16,7 @@ void subtractMatrices(double[][MAX_ROWS], int);
 void multiplyMatrices(double[][MAX_ROWS], int);
 double* sumOfRows(double[][MAX_ROWS], int);
 double* sumOfCols(double[][MAX_ROWS], int);
+void fillWithRandomNum(double[][MAX_ROWS], int);
+
 
 #endif /* MATRIX_H */

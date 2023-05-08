@@ -17,7 +17,8 @@ int main()
         cout << "5. Multiply two matrices" << endl;
         cout << "6. Sum of rows" << endl;
         cout << "7. Sum of columns" << endl;
-        cout << "8. Quit" << endl;
+        cout << "8. Fill with random numbers" << endl;
+        cout << "9. Quit" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -45,12 +46,14 @@ int main()
             sumOfCols(matrix, MAX_ROWS);
             break;
         case 8:
+            fillWithRandomNum(matrix, MAX_ROWS);
+        case 9:
             cout << "Goodbye!" << endl;
             break;
         default:
             cout << "Invalid choice. Try again." << endl;
         }
-    } while (choice != 8);
+    } while (choice != 9);
 
     return 0;
 }
