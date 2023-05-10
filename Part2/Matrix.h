@@ -17,6 +17,7 @@ void multiplyMatrices(double[][MAX_ROWS], int);
 double* sumOfRows(double[][MAX_ROWS], int);
 double* sumOfCols(double[][MAX_ROWS], int);
 void fillWithRandomNum(double[][MAX_ROWS], int);
+void quickSort(long[], int*, int*);
 
 
 #endif /* MATRIX_H */

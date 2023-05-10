@@ -48,12 +48,15 @@ int main()
         case 8:
             fillWithRandomNum(matrix, MAX_ROWS);
         case 9:
+            quickSort(matrix, MAX_ROWS);
+            break;
+        case 10:
             cout << "Goodbye!" << endl;
             break;
         default:
             cout << "Invalid choice. Try again." << endl;
         }
-    } while (choice != 9);
+    } while (choice != 10);
 
     return 0;
 }
